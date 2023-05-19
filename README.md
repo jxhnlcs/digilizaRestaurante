@@ -2,7 +2,7 @@
 
 Programa de reserva de restaurantes para teste de vaga de desenvolvedor da empresa Digiliza
 
-##### :see_no_evil: Backend
+##### 🔙: Backend
 
 - É necessario renomear o arquivo **.env.example** para **.env** .
 - Ápos renomear o **.env** é preciso colocar os valores corretos das variaveis dentro do arquivo.
@@ -22,7 +22,7 @@ cd api
 npm run dev
 ```
 
-##### :eyes: Frontend
+##### 🖥️: Frontend
 
 Para executar o front end basta rodar os comando abaixo:
 
@@ -35,7 +35,7 @@ npm run dev
 ```
 
 
-# Technologies
+# Tecnologias
 
 Technologies usadas no desenvolvimento:
 
