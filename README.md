@@ -1,7 +1,54 @@
-# Vue 3 + Vite
+# Digiliza Restaurante
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Programa de reserva de restaurantes para teste de vaga de desenvolvedor da empresa Digiliza
 
-## Recommended IDE Setup
+##### :game_die: Banco de Dados
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- É nescessario rodar o arquivo **banco.sql** para criar as tabelas necessarias no banco de dados.
+
+##### 🔙: Backend
+
+- É necessario renomear o arquivo **.env.example** para **.env** .
+- Ápos renomear o **.env** é preciso colocar os valores corretos das variaveis dentro do arquivo.
+- Rode o comando abaixo instalar as dependencias do backend:
+
+```shell
+ npm i
+```
+
+Para executar a api basta rodar o comando abaixo:
+
+```shell
+cd api
+```
+
+```shell
+npm run dev
+```
+
+##### 🖥️: Frontend
+
+Para executar o front end basta rodar os comando abaixo:
+
+```shell
+cd web
+```
+
+```shell
+npm run dev
+```
+
+
+# Tecnologias
+
+Technologies usadas no desenvolvimento:
+
+• Vuejs
+
+• Node.js
+
+• MySQL
+
+• Docker
+
+• MVC
