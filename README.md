@@ -2,6 +2,10 @@
 
 Programa de reserva de restaurantes para teste de vaga de desenvolvedor da empresa Digiliza
 
+##### :game_die: Banco de Dados
+
+- É nescessario rodar o arquivo **banco.sql** para criar as tabelas necessarias no banco de dados.
+
 ##### 🔙: Backend
 
 - É necessario renomear o arquivo **.env.example** para **.env** .
