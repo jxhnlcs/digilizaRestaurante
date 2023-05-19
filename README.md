@@ -40,12 +40,8 @@ npm run dev
 
 #### ⚙️:Tecnologias
 
-• Vuejs
-
-• Node.js
-
-• MySQL
-
-• Docker
-
-• MVC
+- Vuejs
+- Node.js
+- MySQL
+- Docker
+- MVC
