@@ -7,10 +7,10 @@ services:
       volumes:
        - ./bd/mariadb:/var/lib/mysql/
       environment:
-        - MYSQL_ROOT_PASSWORD=root-pass
+        - MYSQL_ROOT_PASSWORD=root-pwd
         - MYSQL_DATABASE=digilizarestaurante
-        - MYSQL_USER=user
-        - MYSQL_PASSWORD=pass
+        - MYSQL_USER=root
+        - MYSQL_PASSWORD=
         - TZ=America/Sao_Paulo
       ports:
         - "3306:3306"
