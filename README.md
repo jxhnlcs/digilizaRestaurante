@@ -38,10 +38,7 @@ cd web
 npm run dev
 ```
 
-
-# Tecnologias
-
-Technologies usadas no desenvolvimento:
+#### ⚙️:Tecnologias
 
 • Vuejs
 
