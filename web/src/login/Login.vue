@@ -62,7 +62,7 @@ export default {
           secure: true,
           expire: now_increase_interval(1),
         });
-        this.$router.push('/home');
+        this.$router.push('/main');
         return
       }
       response.status === 401 ? Swal.fire(

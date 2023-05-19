@@ -36,19 +36,6 @@
           </div>
         </form>
       </div>
-      <div class="userReservas">
-        <h2>Reservas</h2>
-        <ul>
-          <li v-for="reserva in reservas" :key="reserva.id">
-            <p>Usuário: {{ reserva.usuario }}</p>
-            <p>Mesa: {{ reserva.mesa }}</p>
-            <p>Quantidade de pessoas: {{ reserva.quantidadePessoas }}</p>
-            <p>Data: {{ reserva.data }}</p>
-            <p>Horário: {{ reserva.horario }}</p>
-            <button @click="cancelarReserva(reserva.id)">Cancelar reserva</button>
-          </li>
-        </ul>
-      </div>
     </div>
   </div>
 </template>
@@ -183,23 +170,6 @@ export default {
           console.error('Erro ao obter as reservas:', error);
         });
     },
-
-    cancelarReserva(reservaId) {
-      fetch(`${import.meta.env.VITE_API_URL}api/reservas/${reservaId}`, {
-        method: 'DELETE',
-      })
-        .then((response) => {
-          if (response.ok) {
-            this.message = 'Reserva cancelada com sucesso';
-            this.getReservas();
-          } else {
-            this.message = 'Erro ao cancelar a reserva';
-          }
-        })
-        .catch((error) => {
-          console.error('Erro ao cancelar a reserva:', error);
-        });
-    }
   },
   mounted() {
     this.getReservas()
