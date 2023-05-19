@@ -127,7 +127,7 @@ export default {
             )
           }
         });
-      this.getReservas(c)
+      this.getReservas()
       this.mesa = ''
       this.quantidadePessoas = ''
       this.data = ''

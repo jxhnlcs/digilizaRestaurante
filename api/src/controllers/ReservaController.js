@@ -8,16 +8,12 @@ class ReservaController {
     async InserirReserva(request, response) {
         {
             const { mesa, quantidadePessoas, data, horario, comentario } = request.body;
-            const existeReserva = await verificarReservaExistente(mesa, data, horario);
             const reservaDao = new ReservaDao
             const reserva = await reservaDao.CadastrarReserva(
                 mesa, quantidadePessoas, data, horario, comentario
             )
 
-            if (existeReserva) {
-                return response.json({ message: 'Já existe uma reserva para esta mesa na mesma data e horário.' });
-            }
-            else if (reserva) {
+            if (reserva) {
                 return response.json({ message: 'Reserva realizado com sucesso.' })
             }
             return response.json({
